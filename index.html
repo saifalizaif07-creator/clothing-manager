@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>Clothing Manager – Per KG Sale</title>
+<meta name="description" content="Offline-first POS and sales manager for per-KG cloth shops">
+<meta name="theme-color" content="#0b1426">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cloth Manager">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="splash" class="splash"><div class="spin"></div><div>Clothing Manager</div></div>
+<div id="offline" class="topbanner hide">You are offline – everything keeps working and will sync later.</div>
+<div id="update" class="topbanner update hide"></div>
+<header class="appbar"><div class="brand">🧵 <b>Clothing Manager</b><small>Per KG Sale</small></div><div class="appbar-actions"><span id="syncChip" class="sync-chip hide"></span><button id="menuToggle" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button></div></header>
+<main id="view"></main>
+<nav id="nav" class="bottom-nav" aria-label="Main navigation"></nav>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<div id="lock" class="lock hide"></div>
+<noscript><p style="padding:20px">This app needs JavaScript.</p></noscript>
+<script src="database.js"></script>
+<script src="billing.js"></script>
+<script src="backup.js"></script>
+<script src="invoice.js"></script>
+<script src="reports.js"></script>
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
